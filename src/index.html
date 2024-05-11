@@ -3,7 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form Validation</title>
   </head>
-  <body></body>
+  <body>
+    <form action="">
+      <div class="email-section align">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="country-section align">
+        <label for="country">Country:</label>
+        <input type="text" name="country" id="country" />
+      </div>
+      <div class="zip-code-section align">
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" name="zipcode" id="zipcode" />
+      </div>
+      <div class="password-section align">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div class="password-confirmation-section align">
+        <label for="password-confirmation">Comfirm Password:</label>
+        <input
+          type="password"
+          name="password-confirmation"
+          id="password-confirmation"
+        />
+      </div>
+    </form>
+  </body>
 </html>
