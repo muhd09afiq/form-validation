@@ -18,11 +18,18 @@ form {
 }
 
 input,
-label {
+label,
+select {
   margin: 8px;
+  width: 200px;
+  font-size: 16px;
 }
 
 input:invalid {
+  border: 2px solid black;
+}
+
+input:not(:placeholder-shown):invalid {
   border: 2px solid red;
 }
 
