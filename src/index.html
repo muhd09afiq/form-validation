@@ -6,7 +6,7 @@
     <title>Form Validation</title>
   </head>
   <body>
-    <form action="">
+    <form action="" novalidate>
       <div class="email-section align">
         <label for="email">Email:</label>
         <input
@@ -16,25 +16,45 @@
           required
           placeholder="example@email.com"
         />
+        <span></span>
       </div>
       <div class="country-section align">
         <label for="country">Country:</label>
-        <select name="country" id="country" class="crs-country"></select>
+        <select
+          name="country"
+          id="country"
+          class="crs-country"
+          required
+        ></select>
       </div>
       <div class="zip-code-section align">
         <label for="zipcode">Zip Code:</label>
-        <input type="text" name="zipcode" id="zipcode" />
+        <input
+          type="text"
+          name="zipcode"
+          id="zipcode"
+          placeholder=""
+          required
+        />
       </div>
       <div class="password-section align">
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder=""
+          required
+        />
       </div>
       <div class="password-confirmation-section align">
-        <label for="password-confirmation">Comfirm Password:</label>
+        <label for="password-confirmation">Confirm Password:</label>
         <input
           type="password"
           name="password-confirmation"
           id="password-confirmation"
+          placeholder="Re-enter your password"
+          required
         />
       </div>
       <button type="submit">Submit</button>
